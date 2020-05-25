@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{"2l/u":function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),l=n.n(a),o=n("Wbzz"),r=n("Bl7J"),u=n("vrFN");t.default=function(e){return l.a.createElement(r.a,null,l.a.createElement(u.a,{title:"Our Board"}),l.a.createElement("h1",null,"Our Board"),l.a.createElement("p",null,"Coming soon!"),l.a.createElement(o.Link,{to:"/"},"Go back to the homepage"))}}}]);
+//# sourceMappingURL=component---src-pages-about-tsx-3494db412b44ab54c0cb.js.map
