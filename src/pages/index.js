@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Welcome to the new website for BGSU's ACM chapter.</h1>
+    <h1>We have amazing things planned for 2020!</h1>
     <p>Watch this space to learn more!</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
