@@ -5,7 +5,7 @@ import { PageProps, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const SecondPage = (props: PageProps) => (
+const DataHackPage = (props: PageProps) => (
   <Layout>
     <SEO title="2020 Data Hack" />
     <h1>2020 Data Hack</h1>
@@ -25,4 +25,4 @@ const SecondPage = (props: PageProps) => (
   </Layout>
 )
 
-export default SecondPage
+export default DataHackPage
