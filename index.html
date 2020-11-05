@@ -4,15 +4,29 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Upcoming Events</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
+  <ul class="post-list event-list">
+    {% for event in site.categories.events %}
+    <li>
+      <span class="post-meta">{{ event.date | date: "%b %-d, %Y" }}</span>
+
+      <h2>
+        <a class="post-link" href="{{ event.url | prepend: site.baseurl }}">{{ event.title }}</a>
+      </h2>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <h1 class="page-heading">Blog Posts</h1>
+
+  <ul class="post-list blog-list">
+    {% for blog in site.categories.blogs %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="post-meta">{{ blog.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-link" href="{{ blog.url | prepend: site.baseurl }}">{{ blog.title }}</a>
         </h2>
       </li>
     {% endfor %}
