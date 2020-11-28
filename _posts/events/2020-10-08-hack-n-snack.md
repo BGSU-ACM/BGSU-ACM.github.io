@@ -1,9 +1,13 @@
 ---
-layout: page
-title: Hack n Snack
-permalink: /hack-n-snack/
+layout: post
+title: "Hack n Snack"
+date-text: "Every Saturday!"
+expires: 2020-12-08 00:00:00 -0500
+categories: events
+cover-image: /assets/hack-n-snack.jpg
+cover-alt: "Laptop with video chat and code"
 ---
-# Hack n Snack
+
 Join our weekly hack n snack!
 
 - Virtual [Discord #voice-alpha channel] (Saturday 11/7 6-8pm)
