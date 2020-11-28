@@ -4,17 +4,21 @@ layout: default
 
 <div class="home">
 
+  <img src="{{ site.baseurl }}assets/cover-collage.png" alt="Collage of ACM activities" style="border-radius: 1rem;"><br><br>
+
   <h1 class="page-heading">Upcoming Events</h1>
 
   <ul class="post-list event-list">
     {% for event in site.categories.events %}
-    <li>
-      <span class="post-meta">{{ event.date | date: "%b %-d, %Y" }}</span>
+      {% if event.expires > site.time %}
+      <li>
+        <span class="post-meta">{{ event.date-text }}</span>
 
-      <h2>
-        <a class="post-link" href="{{ event.url | prepend: site.baseurl }}">{{ event.title }}</a>
-      </h2>
-    </li>
+        <h2>
+          <a class="post-link" href="{{ event.url | prepend: site.baseurl }}">{{ event.title }}</a>
+        </h2>
+      </li>
+      {% endif %}
     {% endfor %}
   </ul>
 
