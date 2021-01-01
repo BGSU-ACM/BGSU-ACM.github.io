@@ -5,6 +5,7 @@
   border-top: 5px solid $orange-color-dark;
   border-bottom: 1px solid $grey-color-light;
   min-height: 56px;
+  background: $content-background-color;
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -176,8 +177,13 @@
   list-style: none;
 
   > li {
-    margin-bottom: $spacing-unit;
+    border-bottom: 1px solid $grey-color-light;
   }
+}
+
+.post-list img {
+  padding-top: .5rem;
+  max-height: 18rem;
 }
 
 .post-meta {
@@ -187,12 +193,34 @@
 
 .post-link {
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  text-decoration: none !important;
+  background: $content-background-color;
+  :hover {
+    background: $grey-color-light;
+  }
+  div {
+    padding: .5rem;
+  }
+  h2 {
+    margin: 0;
+  }
 }
 
 /**
  * Posts
  */
+.post {
+  padding: .5rem;
+  background: $content-background-color;
+}
+
+.post img {
+  display: block;
+  margin: 0 auto;
+  max-height: 22rem;
+}
+
 .post-header {
   margin-bottom: $spacing-unit;
 }

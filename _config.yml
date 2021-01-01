@@ -16,3 +16,4 @@ github_username:  bgsu-acm
 
 # Build settings
 markdown: kramdown
+livereload: true
