@@ -12,11 +12,17 @@ layout: default
     {% for event in site.categories.events %}
       {% if event.expires > site.time %}
       <li>
-        <span class="post-meta">{{ event.date-text }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ event.url | prepend: site.baseurl }}">{{ event.title }}</a>
-        </h2>
+        <a class="post-link" href="{{ event.url | prepend: site.baseurl }}"><div>
+          <span class="post-meta">{{ event.date-text }}</span>
+          
+          <h2>
+            {{ event.title }}
+          </h2>
+          {% if event.cover-image %}
+              <img src="{{ site.baseurl }}{{ event.cover-image }}" alt="{{ event.cover-alt }}" >
+              <br>
+          {% endif %}
+        </div></a>
       </li>
       {% endif %}
     {% endfor %}
@@ -27,11 +33,17 @@ layout: default
   <ul class="post-list blog-list">
     {% for blog in site.categories.blogs %}
       <li>
-        <span class="post-meta">{{ blog.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ blog.url | prepend: site.baseurl }}">{{ blog.title }}</a>
-        </h2>
+        <a class="post-link" href="{{ blog.url | prepend: site.baseurl }}"><div>          
+          <span class="post-meta">{{ blog.date | date: "%b %-d, %Y" }}</span>
+          
+          <h2>
+            {{ blog.title }}
+          </h2>
+          {% if blog.cover-image %}
+              <img src="{{ site.baseurl }}{{ blog.cover-image }}" alt="{{ blog.cover-alt }}" >
+              <br>
+          {% endif %}
+      </div></a>
       </li>
     {% endfor %}
   </ul>
