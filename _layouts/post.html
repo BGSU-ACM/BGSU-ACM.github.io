@@ -18,8 +18,10 @@ cover-alt: "Laptop with video chat and code"
   </header>
 
   {% if page.cover-image %}
-    <img src="{{ site.baseurl }}{{ page.cover-image }}" alt="{{ page.cover-alt }}" >
-    <br><br>
+    <div>
+      <img src="{{ site.baseurl }}{{ page.cover-image }}" alt="{{ page.cover-alt }}" >
+    </div>
+    <br>
   {% endif %}
 
   <div class="post-content" itemprop="articleBody">{{ content }}</div>
