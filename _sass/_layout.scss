@@ -5,6 +5,7 @@
   border-top: 5px solid $orange-color-dark;
   border-bottom: 1px solid $grey-color-light;
   min-height: 56px;
+  background: $content-background-color;
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -176,7 +177,7 @@
   list-style: none;
 
   > li {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid $grey-color-light;
   }
 }
 
@@ -194,6 +195,7 @@
   display: block;
   font-size: 1.2rem;
   text-decoration: none !important;
+  background: $content-background-color;
   :hover {
     background: $grey-color-light;
   }
@@ -208,6 +210,11 @@
 /**
  * Posts
  */
+.post {
+  padding: .5rem;
+  background: $content-background-color;
+}
+
 .post img {
   display: block;
   margin: 0 auto;
