@@ -176,12 +176,12 @@
   list-style: none;
 
   > li {
-    margin-bottom: $spacing-unit;
     border-bottom: 1px solid gray;
   }
 }
 
 .post-list img {
+  padding-top: .5rem;
   max-height: 18rem;
 }
 
@@ -198,7 +198,7 @@
     background: $grey-color-light;
   }
   div {
-    padding: 0 0 1rem 0;
+    padding: .5rem;
   }
   h2 {
     margin: 0;
