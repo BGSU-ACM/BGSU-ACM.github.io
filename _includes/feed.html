@@ -1,0 +1,45 @@
+<div class="home">
+    <h1 class="page-heading">Upcoming Events</h1>
+
+    <ul class="post-list event-list">
+        {% for event in site.categories.events %}
+        {% if event.expires > site.time %}
+        <li>
+            <a class="post-link" href="{{ event.url | prepend: site.baseurl }}"><div>
+            <span class="post-meta">{{ event.date-text }}</span>
+            
+            <h2>
+                {{ event.title }}
+            </h2>
+            {% if event.cover-image %}
+                <img src="{{ site.baseurl }}{{ event.cover-image }}" alt="{{ event.cover-alt }}" >
+                <br>
+            {% endif %}
+            </div></a>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    <h1 class="page-heading">Blog Posts</h1>
+
+    <ul class="post-list blog-list">
+        {% for blog in site.categories.blogs %}
+        <li>
+            <a class="post-link" href="{{ blog.url | prepend: site.baseurl }}"><div>          
+            <span class="post-meta">{{ blog.date | date: "%b %-d, %Y" }}</span>
+            
+            <h2>
+                {{ blog.title }}
+            </h2>
+            {% if blog.cover-image %}
+                <img src="{{ site.baseurl }}{{ blog.cover-image }}" alt="{{ blog.cover-alt }}" >
+                <br>
+            {% endif %}
+        </div></a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+</div>
