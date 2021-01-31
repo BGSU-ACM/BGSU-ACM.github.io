@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "2021 ACM Election"
-date-text: "Application deadline is January 22nd"
-expires: 2021-01-23 00:00:00 -0500
+date-text: "Application deadline has been extended"
+expires: 2021-02-28 00:00:00 -0500
 categories: events
 cover-image: /assets/acm-election-2021.png
 cover-alt: "Laptop with video chat and code"
@@ -10,7 +10,7 @@ cover-alt: "Laptop with video chat and code"
 
 Are you interested in running for an officer position in the Association for Computing and Machinery here at BGSU? Apply at the link below to become part of an organization that helps to build community and promote professional development among students interested in computing.
 
-[Qualtrics Application, deadline 1/22](https://bgsu.az1.qualtrics.com/jfe/form/SV_3EFDfbXv7wa6GQ5)
+[Qualtrics Application, deadline extended](https://bgsu.az1.qualtrics.com/jfe/form/SV_3EFDfbXv7wa6GQ5)
 
 ## Here is a list of the positions you can apply for:
 
